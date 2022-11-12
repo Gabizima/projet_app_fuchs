@@ -34,18 +34,107 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
-        <title>mohammed henni</title>
+        <title>Fuchs and Gov - Espace Client</title>
     </head>
     <body>
-        <div class="app">
-            <h1>fuchs and gov</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event listening">wait</p>
-                <p class="event received">bonjour à tous les amis</p>
-                <p>on se capte pour une nouvelle vidéo</p>
+    <header>
+        <h1>Service Client Fuchs and Gov</h1>
+        <nav>
+            <!--menu burger -->
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li><a href="#">Mes demandes</a></li>
+                    <li><a href="https://fuchs.ephec.me/fr/">Fuchs and Gov</a></li>
+                    <li><a href="https://fuchs.ephec.me/fr/nous-contacter">Contact</a></li>
+                </ul>
             </div>
-        </div>
+            <a href="#" id="openBtn">
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+                </a>
+        </nav>
+    </header>
+
+    <!-- contenue -->
+    <div class="introduction">
+        <p>Bienvenue dans le service client de Fuchs and Gov. Sur plateforme, vous pouvez faire des demandes conernant
+            des réparations de votre montre.</p>
+        <p>Cette application nous permet de gérer plus facilement vos problèmes et aussi que vous puissiez avoir
+        votre montre réparer dans les meilleurs délais.</p>
+    </div>
+
+    <!-- forumlaire en accordéon -->
+    <form action="">
+        <fieldset>
+            <legend>Select votre modèle:</legend>
+
+            <div class="radio_montre">
+                <input type="radio" id="montre_vert" name="drone" value="montre_vert">
+                <label for="montre_vert">
+                    <img src="img/montrevert.jpeg" alt="montre_vert" height="120px" width="120px"/>
+                </label>
+            </div>
+
+            <div class="radio_montre">
+                <input type="radio" id="montre_blanc" name="drone" value="montre_blanc">
+                <label for="montre_blanc">
+                    <img src="img/montre_blanc.jpeg" alt="montre_vert" height="120px" width="120px"/>
+                </label>
+            </div>
+
+            <div class="radio_montre">
+                <input type="radio" id="montre_bleu" name="drone" value="montre_bleu">
+                <label for="montre_bleu">
+                    <img src="img/montre_bleu.jpeg" alt="montre_vert" height="120px" width="120px"/>
+                </label>
+            </div>
+
+            <div class="radio_montre">
+                <input type="radio" id="montre_noir" name="drone" value="montre_noir">
+                <label for="montre_noir">
+                    <img src="img/montre_noir.jpeg" alt="montre_vert" height="120px" width="120px"/>
+                </label>
+            </div>
+
+            <div class="radio_montre">
+                <input type="radio" id="montre_ultima" name="drone" value="montre_ultima">
+                <label for="montre_ultima">
+                    <img src="img/montre_ultima.jpeg" alt="montre_vert" height="120px" width="120px"/>
+                </label>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Quels type de problème à votre montre ?</legend>
+            <input type="radio">
+            <label> La lunette de ma montre est fissurée</label>
+
+            <input type="radio">
+            <label>Ma montre ne fonctionne pas</label>
+
+            <input type="radio">
+            <label>Mon bracelet s'est cassée</label>
+
+            <input type="radio">
+            <label>Le bouton de réglage de ma montre ne marche pas</label>
+            <input type="radio">
+            <label>Autres</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend> Décrivez précisement votre problème :</legend>
+            <input type="textarea" placeholder="votre texte" size="120" style="height:250px;">
+            <input type="button" value="Envoyez">
+
+        </fieldset>
+    </form>
+
+
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
     </body>
