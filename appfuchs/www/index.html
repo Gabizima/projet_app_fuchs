@@ -37,105 +37,119 @@
         <title>Fuchs and Gov - Espace Client</title>
     </head>
     <body>
-    <header>
-        <h1>Service Client Fuchs and Gov</h1>
-        <nav>
-            <!--menu burger -->
-            <div id="mySidenav" class="sidenav">
-                <a id="closeBtn" href="#" class="close">×</a>
-                <ul>
-                    <li><a href="#">Mes demandes</a></li>
-                    <li><a href="https://fuchs.ephec.me/fr/">Fuchs and Gov</a></li>
-                    <li><a href="https://fuchs.ephec.me/fr/nous-contacter">Contact</a></li>
-                </ul>
-            </div>
-            <a href="#" id="openBtn">
+    <div class="grid-container">
+        <div class="grid-item">
+            <!-- HEADER-->
+                <h1>Service Client Fuchs and Gov</h1>
+                <nav>
+                    <!--menu burger -->
+                    <div id="mySidenav" class="sidenav">
+                        <a id="closeBtn" href="#" class="close">×</a>
+                        <ul>
+                            <li><a href="#">Mes demandes</a></li>
+                            <li><a href="https://fuchs.ephec.me/fr/">Fuchs and Gov</a></li>
+                            <li><a href="https://fuchs.ephec.me/fr/nous-contacter">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" id="openBtn">
       <span class="burger-icon">
         <span></span>
         <span></span>
         <span></span>
       </span>
-                </a>
-        </nav>
-    </header>
+                    </a>
+                    <!--fin menu burger -->
+                </nav>
 
-    <!-- contenue -->
-    <div class="introduction">
-        <p>Bienvenue dans le service client de Fuchs and Gov. Sur plateforme, vous pouvez faire des demandes conernant
-            des réparations de votre montre.</p>
-        <p>Cette application nous permet de gérer plus facilement vos problèmes et aussi que vous puissiez avoir
-        votre montre réparer dans les meilleurs délais.</p>
+        </div>
+        <!--INTRODUCTION -->
+        <div class="grid-item">
+            <p>Bienvenue dans le service client de Fuchs and Gov. Sur plateforme, vous pouvez faire des demandes conernant
+                des réparations de votre montre.</p>
+            <p>Cette application nous permet de gérer plus facilement vos problèmes et aussi que vous puissiez avoir
+                votre montre réparer dans les meilleurs délais.</p>
+        </div>
+        <!--FORMULAIRE -->
+        <form action="">
+
+        <!--SELETIONNEZ VOTRE MODELE -->
+            <div class="grid-item">
+                <fieldset class="model">
+                    <legend class="title_selectionner">Selectionnez votre modèle:</legend>
+
+                    <input type="radio" id="montre_vert" class="montre" name="drone" value="montre_vert">
+                    <label for="montre_vert">
+                        <img src="img/montrevert.jpeg" alt="montre_vert" height="300px" width="300px"/>
+                    </label>
+
+                    <input type="radio" id="montre_blanc" class="montre" name="drone" value="montre_blanc">
+                    <label for="montre_blanc">
+                        <img src="img/montre_blanc.jpeg" alt="montre_vert" class="img_montre "height="300px" width="300px"/>
+                    </label>
+
+                    <input type="radio" id="montre_bleu" class="montre" name="drone" value="montre_bleu">
+                    <label for="montre_bleu">
+                        <img src="img/montre_bleu.jpeg" alt="montre_vert" height="300px" width="300px"/>
+                    </label>
+
+                    <input type="radio" id="montre_noir" name="drone" class="montre" value="montre_noir">
+                    <label for="montre_noir">
+                        <img src="img/montre_noir.jpeg" alt="montre_vert" height="300px" width="300px"/>
+                    </label>
+
+                    <input type="radio" id="montre_ultima" name="drone" class="montre" value="montre_ultima">
+                    <label for="montre_ultima">
+                        <img src="img/montre_ultima.jpeg" alt="montre_vert" height="300px" width="300px"/>
+                    </label>
+
+                </fieldset>
+
+
+            </div>
+
+            <!--PROBLEME -->
+            <div class="grid-item">
+                <fieldset class="problem">
+                    <legend>Quels type de problème à votre montre ?</legend>
+
+                    <input type="button" value="La lunette de ma montre est fissurée" name="probleme" class="probleme">
+
+                    <input type="button" value="Ma montre ne fonctionne pas" name="probleme" class="probleme">
+
+                    <input type="button" value="Mon bracelet s'est cassée" name="probleme" class="probleme">
+
+                    <input type="button" value="Le bouton de réglage de ma montre ne marche pas" name="probleme" class="probleme">
+                    <input type="button" value="Autres" name="probleme" class="probleme">
+
+                </fieldset>
+            </div>
+
+            <!-- DESCPRITION-->
+            <div class="grid-item">
+                <fieldset>
+                    <div class="text">
+                        <legend> Décrivez précisement votre problème :</legend>
+                        <input type="textarea" class="textarea" placeholder="votre texte" >
+                        <input type="button" class="send" value="Envoyez">
+
+
+                    </div>
+
+
+                </fieldset>
+            </div>
+
+        </form>
     </div>
 
-    <!-- forumlaire en accordéon -->
-    <form action="">
-        <fieldset>
-            <legend>Select votre modèle:</legend>
 
-            <div class="radio_montre">
-                <input type="radio" id="montre_vert" name="drone" value="montre_vert">
-                <label for="montre_vert">
-                    <img src="img/montrevert.jpeg" alt="montre_vert" height="120px" width="120px"/>
-                </label>
-            </div>
 
-            <div class="radio_montre">
-                <input type="radio" id="montre_blanc" name="drone" value="montre_blanc">
-                <label for="montre_blanc">
-                    <img src="img/montre_blanc.jpeg" alt="montre_vert" height="120px" width="120px"/>
-                </label>
-            </div>
 
-            <div class="radio_montre">
-                <input type="radio" id="montre_bleu" name="drone" value="montre_bleu">
-                <label for="montre_bleu">
-                    <img src="img/montre_bleu.jpeg" alt="montre_vert" height="120px" width="120px"/>
-                </label>
-            </div>
 
-            <div class="radio_montre">
-                <input type="radio" id="montre_noir" name="drone" value="montre_noir">
-                <label for="montre_noir">
-                    <img src="img/montre_noir.jpeg" alt="montre_vert" height="120px" width="120px"/>
-                </label>
-            </div>
-
-            <div class="radio_montre">
-                <input type="radio" id="montre_ultima" name="drone" value="montre_ultima">
-                <label for="montre_ultima">
-                    <img src="img/montre_ultima.jpeg" alt="montre_vert" height="120px" width="120px"/>
-                </label>
-            </div>
-
-        </fieldset>
-        <fieldset>
-            <legend>Quels type de problème à votre montre ?</legend>
-            <input type="radio">
-            <label> La lunette de ma montre est fissurée</label>
-
-            <input type="radio">
-            <label>Ma montre ne fonctionne pas</label>
-
-            <input type="radio">
-            <label>Mon bracelet s'est cassée</label>
-
-            <input type="radio">
-            <label>Le bouton de réglage de ma montre ne marche pas</label>
-            <input type="radio">
-            <label>Autres</label>
-
-        </fieldset>
-
-        <fieldset>
-            <legend> Décrivez précisement votre problème :</legend>
-            <input type="textarea" placeholder="votre texte" size="120" style="height:250px;">
-            <input type="button" value="Envoyez">
-
-        </fieldset>
-    </form>
 
 
         <script src="cordova.js"></script>
+
         <script src="js/index.js"></script>
     </body>
 </html>
