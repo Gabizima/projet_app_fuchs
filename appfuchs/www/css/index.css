@@ -183,3 +183,32 @@ footer{
     text-align: center;
     line-height: 100px;
 }
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
+/*Formulaire inscription connection*/
+.container_form{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+input[type="submit"]{
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
