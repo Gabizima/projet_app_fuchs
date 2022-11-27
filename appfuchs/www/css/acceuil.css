@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+.link { color: white; }
+.link:hover { color: #1c1c1c; }
+.link{text-align: center;}
+
+.mdp{ color: white; }
+.mdp:hover { color: #1c1c1c; }
+.mdp{text-align: center;}
+
+
+
+.bouton_connectez_vous
+{
+    text-decoration : none;
+    text-align: center;
+    background-color: #7e7e7e;
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+
+
+.bouton_inscrivez_vous
+{
+    text-decoration : none;
+    text-align: center;
+    background-color: #7e7e7e;
+    padding: 20px;
+    display: block;
+    margin: auto;
+}

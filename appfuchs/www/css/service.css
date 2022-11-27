@@ -1,0 +1,46 @@
+/* CSS pour la page service */
+
+.text{
+    text-align: center;
+
+}
+.textarea {
+    width: 300px;
+    height: 150px;
+}
+.send{
+    background-color: #818181;
+    border: none;
+    color: white;
+    width: 400px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.problem{
+    padding-bottom: 20px;
+}
+
+/* service : caméra*/
+.myImage_1{
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #ffffff;
+}
+
+.container{
+    display: inline-block;
+    margin: 30px;
+}
+
+.final_send{
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+}

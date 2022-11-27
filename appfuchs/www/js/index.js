@@ -19,15 +19,10 @@
 
 // Wait for the deviceready event before using any of Cordova's device APIs.
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
-document.addEventListener('deviceready', onDeviceReady, false);
-
+document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
 
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
 }
-
 // menu burger
 var sidenav = document.getElementById("mySidenav");
 var openBtn = document.getElementById("openBtn");
@@ -45,4 +40,40 @@ function openNav() {
 function closeNav() {
     sidenav.classList.remove("active");
 }
+
+/* Caméra*/
+
+var buttonPhoto = document.getElementById("buttonCamera");
+buttonPhoto.onclick = takePhotos;
+
+function takePhotos(e) {
+    e.preventDefault();
+    let options = {
+        quality: 80,
+        destinationType: Camera.DestinationType.FILE_URI,
+        sourceType: Camera.PictureSourceType.CAMERA,
+        mediaType: Camera.MediaType.PICTURE,
+        encodingType: Camera.EncodingType.JPEG,
+        cameraDirection: Camera.Direction.BACK,
+        targetWidth: 300,
+        targetHeight: 400
+    }
+
+
+    navigator.camera.getPicture(cameraSuccess, cameraError, options);
+
+}
+function cameraSuccess() {
+    console.log("Camera capture success.")
+    $document("button camera")
+}
+
+function cameraError(message) {
+    alert('Failed because: ' + message);
+}
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.camera);
+}
+
 

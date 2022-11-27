@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
-  <!--
-Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
-    https://cordova.apache.org/docs/en/latest/
-Some notes:
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
--->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
-  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width">
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="css/index.css">
-  <title>Fuchs and Gov - Espace Client</title>
-  <title>Espace personnel</title>
+  <link rel="stylesheet" href="css/connexion.css">
+
+  <title>Connexion</title>
 </head>
 
+
 <body>
+<!-- HEADER-->
 <header>
-  <h1>Service Client Fuchs and Gov</h1>
+  <!--LOGO -->
+  <div class="logo">
+    <a href="index.html"><img src="img/logo_fuchs.jpeg" alt="logo_fuchs_and_gov" width="190" height="120"></a>
+    <h1>Service Client Fuchs and Gov</h1>
+  </div>
+
   <nav>
     <!--menu burger -->
     <div id="mySidenav" class="sidenav">
@@ -31,6 +33,7 @@ Some notes:
         <li><a href="#">Mes demandes</a></li>
         <li><a href="https://fuchs.ephec.me/fr/">Fuchs and Gov</a></li>
         <li><a href="https://fuchs.ephec.me/fr/nous-contacter">Contact</a></li>
+        <li><a href="index.html">Se déconnecter</a></li>
       </ul>
     </div>
     <a href="#" id="openBtn">
@@ -40,26 +43,49 @@ Some notes:
         <span></span>
       </span>
     </a>
+    <!--fin menu burger -->
   </nav>
 </header>
+<!--formulaire pour connextion METTRE JQUERY POUR VERIFIER SI AUTHENTIFICATION REUSSITE -> page mes demandes/ nouvelles demandes-->
 
-<div class="app">
-  <img src="img/logo_fuchs.jpeg" class="logo" alt="logo.png">
+  <div class="containter_form">
+    <form method="post" action="">
+      <legend> Connectez-vous  </legend>
+      <p>
+        <label for="email"> Votre e-mail </label>
 
-  </br>
+        <input class="champ_formulaire" type="email" name="email" id="email"
+               placeholder="Entrez votre adresse mail" required/>
+      </p>
+      <p>
+        <label for="id_password">Mot de passe :</label>
+        <input class="champ_formulaire" type="password" name="password" id="id_password"
+               value="" placeholder="Entrez votre mot de passe..." required/>
+      </p>
 
-  <div class="left">
+      <!--normalement ça doit être un bouton input ! -->
+      <div class="bouton_connectez_vous">
+        <a class="boutons_connect" href="service.html" > Connectez-vous </a>
+      </div>
 
-    <ol> <label for="mail">e-mail:</label>
-      <input type="Email" id="mail" name="user_mail"></ol>
 
-    <ol> <label for="password">Mot de passe:</label>
-      <input type="password" id="password" name="password"></ol>
+    </form>
   </div>
 
-  <div>
-    <a href="#" title="Connexion">Connexion </a>
+<!-- bouton inscription -->
+  <div class="bouton_inscrire">
+    <p>Vous n'êtes pas encore inscrit ? <a class="boutons_sub" href="inscription.html" > Inscrivez-vous </a></p>
   </div>
+
+
+<footer>
+  <p><a class="link" href="tel:+32486930283">Cliquez ici pour appeler le 0486.93.02.83</a></p>
+</footer>
+
+
+  <script src="cordova.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>
