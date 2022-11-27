@@ -1,3 +1,5 @@
 a.se_connecter_button:hover{
     font-weight: bolder;
+    text-decoration: underline;
+
 }
