@@ -76,4 +76,4 @@ function onDeviceReady() {
     console.log(navigator.camera);
 }
 
-
+/* */

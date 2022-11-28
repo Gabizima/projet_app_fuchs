@@ -17,7 +17,7 @@
     <header>
         <!--LOGO -->
         <div class="logo">
-            <a href="index.html"><img src="img/logo_fuchs.jpeg" alt="logo_fuchs_and_gov" width="190" height="120"></a>
+            <a href="index.html"><img src="img/logo_fuchs.jpeg" alt="logo_fuchs_and_gov" width="130" height="90"></a>
             <h1>Service Client Fuchs and Gov</h1>
         </div>
 
@@ -47,23 +47,23 @@
     <h2> Bienvenue sur notre service client </h2>
 <!--formulaire inscription -->
     <div class="container_form">
-        <form method="post" action="" class="form_sub">
+        <form class="form_sub">
             <legend> Créer un compte  </legend>
-            <label for="id_nom"> Nom d'utilisateur </label>
-            <input class="champ_formulaire" type="text" name="nom" id="id_nom"
+            <label for="create_username"> Nom d'utilisateur </label>
+            <input class="champ_formulaire" type="text" name="nom" id="create_username"
                    placeholder="Nom + Prénom" required/>
 
-            <label for="id_email"> Votre e-mail </label>
-            <input class="champ_formulaire" type="email" name="email" id="id_email" placeholder="Entrez votre adresse mail"required/>
+            <label for="create_email"> Votre e-mail </label>
+            <input class="champ_formulaire" type="email" name="email" id="create_email" placeholder="Entrez votre adresse mail"required/>
 
             <label for="id_password">Entrez votre mot de passe :</label>
             <input class="champ_formulaire" type="password" name="password" id="id_password" value="" placeholder="Entrez votre mot de passe..." />
 
-            <label for="id_password_con">Confirmez votre mot de passe :</label>
-            <input class="champ_formulaire" type="password" name="password" id="id_password_con"
+            <label for="create_password">Confirmez votre mot de passe :</label>
+            <input class="champ_formulaire" type="password" name="password" id="create_password"
                    value="" placeholder="Confirmer votre mot de passe" />
             <!--boutton envoyer le formulaire inscription + envoyer dans la base de donnée  -->
-            <input type="submit" value="Créer votre compte" id="envoyer"/>
+            <input type="submit" value="Créer votre compte" id="create_button"/>
         </form>
 
     </div>
@@ -83,17 +83,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
     <script>
-            $(document).ready(function() {
-            $.post('https://mobile.lpow.ephec.be/users/register', {
-                groupe: 13,
-                email: document.getElementById("id_email").value,
-                password: document.getElementById("id_password_con").value,
-                nom: document.getElementById("id_nom").value,
-            }, function (data){
-                console.log(data)
-                }
-            )
-        })
+
     </script>
 
 </body>

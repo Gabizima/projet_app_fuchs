@@ -1,9 +1,12 @@
 /*GENERALE */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Oxygen:wght@300&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 body {
     color: #ffffff;
 
-    font-family: 'Montserrat', sans-serif;
     font-size:15px;
     margin:0;
     padding:0;
@@ -89,7 +92,6 @@ form{
     width: 35px;
     height: 5px;
     background-color: white;
-    margin: 6px 0;
 }
 /* Sidenav menu */
 .sidenav {
@@ -145,7 +147,7 @@ form{
     width: 35px;
     height: 5px;
     background-color: #FFFFFF;
-    margin: 6px 0;
+    margin: 6px 0 6px 12px;
 }
 
 /* fin du menu */
@@ -193,7 +195,7 @@ footer > p > a:hover{
     box-sizing: border-box;
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+
     border: 1px solid #ccc;
 }
 
@@ -205,6 +207,7 @@ input[type="text"], input[type="email"], input[type="password"]{
     border: 1px solid #ccc;
     box-sizing: border-box;
     background-color: #ffffff;
+    color: #111111;
 }
 
 input[type="submit"]{

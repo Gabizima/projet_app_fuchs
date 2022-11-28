@@ -50,23 +50,21 @@
 <!--formulaire pour connextion METTRE JQUERY POUR VERIFIER SI AUTHENTIFICATION REUSSITE -> page mes demandes/ nouvelles demandes-->
 
   <div class="container_form">
-    <form method="post" action="">
-      Connectez-vous
-      <p>
-        <label for="email"> Votre e-mail </label>
+    <form method="post" class="form_log">
+      <legend>Connectez-vous</legend>
 
-        <input class="champ_formulaire" type="email" name="email" id="email"
+        <label for="login_email"> Votre e-mail </label>
+
+        <input class="champ_formulaire" type="email" name="email" id="login_email"
                placeholder="Entrez votre adresse mail" required/>
-      </p>
-      <p>
-        <label for="id_password">Mot de passe :</label>
-        <input class="champ_formulaire" type="password" name="password" id="id_password"
+
+        <label for="login_password">Mot de passe :</label>
+        <input class="champ_formulaire" type="password" name="password" id="login_password"
                value="" placeholder="Entrez votre mot de passe..." required/>
-      </p>
 
       <!--normalement ça doit être un bouton input ! -->
       <div class="bouton_connectez_vous">
-        <a class="boutons_connect" href="service.html" > Connectez-vous </a>
+        <input type="submit" value="Se Connecter" id="login-button">
       </div>
 
 
