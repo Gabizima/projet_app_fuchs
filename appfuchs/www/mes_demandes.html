@@ -24,7 +24,7 @@
       <div id="mySidenav" class="sidenav">
         <a id="closeBtn" href="#" class="close">×</a>
         <ul>
-          <li><a href="#">Mes demandes</a></li>
+          <li><a href="mes_demandes.html">Mes demandes</a></li>
           <li><a href="https://fuchs.ephec.me/fr/">Fuchs and Gov</a></li>
           <li><a href="https://fuchs.ephec.me/fr/nous-contacter">Contact</a></li>
           <li><a href="index.html">Se déconnecter</a></li>
@@ -42,12 +42,35 @@
   </header>
 
   <!--Introduction -->
-
+  <div class='introduction'>
+    <p>
+      Bienvenue sur la page des demandes
+    </p>
+  </div>
   <!-- les demandes en tables -->
+    <table>
+      <tr>
+        <td>Numéro de la demande</td>
+        <td>Objet de la demande</td>
+        <td>Statut</td>
+      </tr>
 
+      <tr>
+        <td>001</td>
+        <td>Cadran cassé</td>
+        <td>En cours de traitement</td>
+      </tr>
+    </table>
+
+    <p>
+      Souhaitez vous faire une nouvelle <a href="service.html">demande</a> ?
+    </p>
   <!-- footer -->
   <footer>
     <p>Cliquez ici pour appeler le<a href="tel:+32486930283"> 0486.93.02.83</a></p>
   </footer>
+  <script src="cordova.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
